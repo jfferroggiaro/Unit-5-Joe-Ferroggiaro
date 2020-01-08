@@ -1,6 +1,10 @@
 public class Num {
     private int value;
 
+    public Num(){
+        this.value = 0;
+    }
+
     public Num(int value){
         this.value = value;
     }
@@ -15,8 +19,10 @@ public class Num {
 
     @Override
     public String toString() {
-        String valString;
-        valString += value;
-        return valString;
+        return "" + value;
+    }
+
+    public Boolean equals(Num otherNum){
+        return this.value == otherNum.value;
     }
 }
